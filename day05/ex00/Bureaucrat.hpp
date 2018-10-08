@@ -6,20 +6,20 @@
 /*   By: aanzieu <aanzieu@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/08 10:48:22 by aanzieu           #+#    #+#             */
-/*   Updated: 2018/10/08 17:21:19 by aanzieu          ###   ########.fr       */
+/*   Updated: 2018/10/08 18:15:30 by aanzieu          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef BUREAUCRAT_H
 #define BUREAUCRAT_H
 
-#define ANSI_COLOR_RED     "\33[31m"
-#define ANSI_COLOR_GREEN   "\33[32m"
-#define ANSI_COLOR_YELLOW  "\33[33m"
-#define ANSI_COLOR_BLUE    "\33[34m"
-#define ANSI_COLOR_MAGENTA "\33[35m"
-#define ANSI_COLOR_CYAN    "\33[36m"
-#define ANSI_COLOR_RESET   "\33[0m"
+#define COLOR_RED     "\33[31m"
+#define COLOR_GREEN   "\33[32m"
+#define COLOR_YELLOW  "\33[33m"
+#define COLOR_BLUE    "\33[34m"
+#define COLOR_MAGENTA "\33[35m"
+#define COLOR_CYAN    "\33[36m"
+#define COLOR_RESET   "\33[0m"
 
 #include <iostream>
 

@@ -6,7 +6,7 @@
 /*   By: aanzieu <aanzieu@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/08 12:23:15 by aanzieu           #+#    #+#             */
-/*   Updated: 2018/10/08 17:40:29 by aanzieu          ###   ########.fr       */
+/*   Updated: 2018/10/08 18:19:25 by aanzieu          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int main()
     // }
     catch (std::exception const &e)
     {
-        std::cout << e.what() << std::endl;
+        std::cout << COLOR_RED << e.what() << std::endl << COLOR_RESET;
     }
 
 
@@ -67,15 +67,15 @@ int main()
         catch (const std::exception &e)
         {
             /* handle exception */
-            std::cout << "This is overead exeption" << e.what() << std::endl;
+            std::cout << COLOR_RED << "overead exeption" << e.what() << std::endl;
         }
     }
 
 
     std::cout << std::endl;
     std::cout << "----------" << std::endl;
-   std::cout << "Created Bureaucrat Zaz, provide an overload of the << operator to ostream" << std::endl
-              << "and error, overide" << std::endl
+   std::cout << COLOR_CYAN << "Created Bureaucrat Zaz, provide an overload of the << operator to ostream" << std::endl
+              << "and error, overide" << std::endl << COLOR_RESET
               << std::endl;
     try
     {
@@ -87,7 +87,7 @@ int main()
             std::cout << "Decremente " << ol.getName() << " grade." << std::endl;
             std::cout << "Ol grade:  " << ol.getGrade() << std::endl;
             ol.downgrade();
-            std::cout << "New Grade: " << ol.getGrade() << " grade" << std::endl;
+            std::cout << COLOR_GREEN << "New Grade: " << ol.getGrade() << " grade" << COLOR_RESET << std::endl;
         }
         std::cout << ol;
         i = 150;
@@ -96,12 +96,12 @@ int main()
             std::cout << "Incremented " << ol.getName() << " grade." << std::endl;
             std::cout << "Ol grade:  " << ol.getGrade() << std::endl;
             ol.upgrade();
-            std::cout << "New Grade: " << ol.getGrade() << " grade" << std::endl;
+            std::cout << COLOR_GREEN << "New Grade: " << ol.getGrade() << " grade" << COLOR_RESET << std::endl;
         }
     }
     catch (const std::exception &e)
     {
-        std::cout << e.what() << " Exeption Catch " << std::endl;
+        std::cout << COLOR_RED << e.what() << " Exeption Catch " << std::endl;
     }
 
     return (0);
