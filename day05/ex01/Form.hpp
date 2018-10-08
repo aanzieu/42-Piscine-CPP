@@ -6,7 +6,7 @@
 /*   By: aanzieu <aanzieu@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/08 10:48:22 by aanzieu           #+#    #+#             */
-/*   Updated: 2018/10/08 19:34:10 by aanzieu          ###   ########.fr       */
+/*   Updated: 2018/10/08 21:38:33 by aanzieu          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,7 @@ class Form
     // Operator
     void upgrade();
     void downgrade();
-
-    //
+    
 
     // Get Function private informations
     std::string			getName(void) const;
